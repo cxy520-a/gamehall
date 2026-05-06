@@ -15,7 +15,6 @@
     --cyan-glow: #00e5ff40;
     --purple: #b388ff;
     --purple-glow: #b388ff40;
-    --green: #69f0ae;
     --text: #ccccdd;
     --text-dim: #666688;
     --border: #222244;
@@ -32,10 +31,8 @@
   }
 
   .bg-stars {
-    position: fixed;
-    top: 0; left: 0; width: 100%; height: 100%;
-    pointer-events: none;
-    z-index: 0;
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    pointer-events: none; z-index: 0;
     background:
       radial-gradient(1px 1px at 10% 20%, rgba(255,255,255,0.3), transparent),
       radial-gradient(1px 1px at 30% 70%, rgba(255,255,255,0.2), transparent),
@@ -49,137 +46,53 @@
       radial-gradient(1px 1px at 45% 90%, rgba(240,192,96,0.2), transparent);
   }
 
-  .container {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 40px 24px;
-    position: relative;
-    z-index: 1;
-  }
+  .container { max-width: 1400px; margin: 0 auto; padding: 40px 24px; position: relative; z-index: 1; }
 
-  .header {
-    text-align: center;
-    margin-bottom: 60px;
-  }
-
+  .header { text-align: center; margin-bottom: 60px; }
   .header-badge {
     display: inline-block;
     background: linear-gradient(135deg, #f0c060, #e8a830);
-    color: #1a1a0a;
-    font-size: 0.85rem;
-    font-weight: 700;
-    letter-spacing: 0.15em;
-    padding: 6px 20px;
-    border-radius: 20px;
-    margin-bottom: 16px;
-    text-transform: uppercase;
+    color: #1a1a0a; font-size: 0.85rem; font-weight: 700;
+    letter-spacing: 0.15em; padding: 6px 20px; border-radius: 20px;
+    margin-bottom: 16px; text-transform: uppercase;
     box-shadow: 0 0 30px rgba(240,192,96,0.5);
   }
-
   .header h1 {
-    font-size: 3.2rem;
-    font-weight: 900;
-    letter-spacing: 0.05em;
+    font-size: 3.2rem; font-weight: 900; letter-spacing: 0.05em;
     background: linear-gradient(180deg, #fff 20%, #f0c060 80%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin-bottom: 8px;
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text; margin-bottom: 8px;
   }
-
-  .header .subtitle {
-    color: #666688;
-    font-size: 1.1rem;
-    letter-spacing: 0.1em;
-  }
+  .header .subtitle { color: #666688; font-size: 1.1rem; letter-spacing: 0.1em; }
 
   .profile-card {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    background: #14141f;
-    border: 1px solid #222244;
-    border-radius: 16px;
-    padding: 24px 32px;
-    margin-bottom: 40px;
+    display: flex; align-items: center; gap: 20px;
+    background: #14141f; border: 1px solid #222244;
+    border-radius: 16px; padding: 24px 32px; margin-bottom: 40px;
     box-shadow: 0 4px 30px rgba(0,0,0,0.3);
   }
-
   .profile-avatar {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border: 3px solid #f0c060;
-    box-shadow: 0 0 20px rgba(240,192,96,0.5);
-    flex-shrink: 0;
+    width: 80px; height: 80px; border-radius: 50%;
+    border: 3px solid #f0c060; box-shadow: 0 0 20px rgba(240,192,96,0.5); flex-shrink: 0;
   }
-
-  .profile-info h3 {
-    font-size: 1.5rem;
-    color: #fff;
-    margin-bottom: 4px;
-  }
-
-  .profile-info .steam-id {
-    color: #666688;
-    font-size: 0.85rem;
-  }
-
-  .stats-row {
-    display: flex;
-    gap: 16px;
-    margin-top: 12px;
-    flex-wrap: wrap;
-  }
-
+  .profile-info h3 { font-size: 1.5rem; color: #fff; margin-bottom: 4px; }
+  .profile-info .steam-id { color: #666688; font-size: 0.85rem; }
+  .stats-row { display: flex; gap: 16px; margin-top: 12px; flex-wrap: wrap; }
   .stat-badge {
-    background: rgba(255,255,255,0.05);
-    border: 1px solid #222244;
-    border-radius: 12px;
-    padding: 8px 16px;
-    font-size: 0.85rem;
+    background: rgba(255,255,255,0.05); border: 1px solid #222244;
+    border-radius: 12px; padding: 8px 16px; font-size: 0.85rem;
   }
+  .stat-badge .stat-num { font-size: 1.3rem; font-weight: 700; color: #fff; }
+  .stat-badge .stat-label { color: #666688; font-size: 0.75rem; }
 
-  .stat-badge .stat-num {
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: #fff;
-  }
-
-  .stat-badge .stat-label {
-    color: #666688;
-    font-size: 0.75rem;
-  }
-
-  .section {
-    margin-bottom: 50px;
-  }
-
+  .section { margin-bottom: 50px; }
   .section-header {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 24px;
-    padding-bottom: 12px;
-    border-bottom: 2px solid #222244;
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 24px; padding-bottom: 12px; border-bottom: 2px solid #222244;
   }
-
-  .section-header .icon {
-    font-size: 1.8rem;
-  }
-
-  .section-header h2 {
-    font-size: 1.6rem;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-  }
-
-  .section-header .count {
-    color: #666688;
-    font-size: 0.9rem;
-    margin-left: auto;
-  }
-
+  .section-header .icon { font-size: 1.8rem; }
+  .section-header h2 { font-size: 1.6rem; font-weight: 700; letter-spacing: 0.05em; }
+  .section-header .count { color: #666688; font-size: 0.9rem; margin-left: auto; }
   .section-completed h2 { color: #f0c060; }
   .section-playing h2 { color: #00e5ff; }
   .section-backlog h2 { color: #b388ff; }
@@ -189,222 +102,113 @@
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 16px;
   }
-
   .game-card {
-    background: #14141f;
-    border: 1px solid #222244;
-    border-radius: 12px;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    position: relative;
+    background: #14141f; border: 1px solid #222244;
+    border-radius: 12px; overflow: hidden;
+    transition: all 0.3s ease; cursor: pointer; position: relative;
   }
-
   .game-card:hover {
-    transform: translateY(-4px);
-    border-color: #f0c060;
-    box-shadow: 0 8px 30px rgba(240,192,96,0.25);
-    background: #1a1a2e;
+    transform: translateY(-4px); border-color: #f0c060;
+    box-shadow: 0 8px 30px rgba(240,192,96,0.25); background: #1a1a2e;
   }
-
   .game-card[data-category="playing"]:hover {
-    border-color: #00e5ff;
-    box-shadow: 0 8px 30px rgba(0,229,255,0.25);
+    border-color: #00e5ff; box-shadow: 0 8px 30px rgba(0,229,255,0.25);
   }
-
   .game-card[data-category="backlog"]:hover {
-    border-color: #b388ff;
-    box-shadow: 0 8px 30px rgba(179,136,255,0.25);
+    border-color: #b388ff; box-shadow: 0 8px 30px rgba(179,136,255,0.25);
   }
-
-  .game-card .card-img {
-    width: 100%;
-    height: 130px;
-    object-fit: cover;
-    background: #1a1a2e;
-  }
-
+  .game-card .card-img { width: 100%; height: 130px; object-fit: cover; background: #1a1a2e; }
   .game-card .card-img-placeholder {
-    width: 100%;
-    height: 130px;
+    width: 100%; height: 130px;
     background: linear-gradient(135deg, #1a1a2e 0%, #222244 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.5rem;
-    color: #333355;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 2.5rem; color: #333355;
   }
-
-  .game-card .card-body {
-    padding: 14px 16px;
-  }
-
+  .game-card .card-body { padding: 14px 16px; }
   .game-card .card-title {
-    font-size: 0.95rem;
-    font-weight: 600;
-    color: #fff;
-    margin-bottom: 8px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    font-size: 0.95rem; font-weight: 600; color: #fff;
+    margin-bottom: 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
   }
-
   .game-card .card-meta {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 0.8rem;
-    color: #666688;
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 0.8rem; color: #666688;
   }
-
   .card-completed .playtime { color: #f0c060; }
   .card-playing .playtime { color: #00e5ff; }
   .card-backlog .playtime { color: #b388ff; }
 
-  .badge {
-    font-size: 0.7rem;
-    padding: 3px 10px;
-    border-radius: 10px;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-  }
+  .badge { font-size: 0.7rem; padding: 3px 10px; border-radius: 10px; font-weight: 600; letter-spacing: 0.05em; }
+  .badge-completed { background: rgba(240,192,96,0.15); color: #f0c060; border: 1px solid rgba(240,192,96,0.3); }
+  .badge-playing { background: rgba(0,229,255,0.15); color: #00e5ff; border: 1px solid rgba(0,229,255,0.3); animation: pulse-badge 2s infinite; }
+  .badge-backlog { background: rgba(179,136,255,0.15); color: #b388ff; border: 1px solid rgba(179,136,255,0.3); }
+  @keyframes pulse-badge { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
 
-  .badge-completed {
-    background: rgba(240,192,96,0.15);
-    color: #f0c060;
-    border: 1px solid rgba(240,192,96,0.3);
-  }
-
-  .badge-playing {
-    background: rgba(0,229,255,0.15);
-    color: #00e5ff;
-    border: 1px solid rgba(0,229,255,0.3);
-    animation: pulse-badge 2s infinite;
-  }
-
-  .badge-backlog {
-    background: rgba(179,136,255,0.15);
-    color: #b388ff;
-    border: 1px solid rgba(179,136,255,0.3);
-  }
-
-  @keyframes pulse-badge {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.5; }
-  }
-
-  .filter-bar {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 30px;
-    flex-wrap: wrap;
-  }
-
+  .filter-bar { display: flex; gap: 10px; margin-bottom: 30px; flex-wrap: wrap; }
   .filter-btn {
-    background: #14141f;
-    border: 1px solid #222244;
-    color: #666688;
-    padding: 8px 18px;
-    border-radius: 20px;
-    font-size: 0.85rem;
-    cursor: pointer;
-    transition: all 0.2s;
-    font-family: inherit;
+    background: #14141f; border: 1px solid #222244; color: #666688;
+    padding: 8px 18px; border-radius: 20px; font-size: 0.85rem;
+    cursor: pointer; transition: all 0.2s; font-family: inherit;
   }
-
-  .filter-btn:hover {
-    color: #fff;
-    border-color: #444;
-  }
-
+  .filter-btn:hover { color: #fff; border-color: #444; }
   .filter-btn.active {
-    color: #fff;
-    border-color: #f0c060;
-    background: rgba(255,255,255,0.05);
-    box-shadow: 0 0 12px rgba(240,192,96,0.3);
+    color: #fff; border-color: #f0c060;
+    background: rgba(255,255,255,0.05); box-shadow: 0 0 12px rgba(240,192,96,0.3);
   }
-
-  .footer {
-    text-align: center;
-    padding: 40px 0 20px;
-    color: #666688;
-    font-size: 0.8rem;
-    letter-spacing: 0.05em;
-    border-top: 1px solid #222244;
-    margin-top: 40px;
-  }
-
-  .footer a {
-    color: #00e5ff;
-    text-decoration: none;
-  }
-
-  .footer a:hover { color: #fff; }
 
   /* Modal */
   .modal-overlay {
     position: fixed; top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0,0,0,0.85);
-    backdrop-filter: blur(12px);
-    z-index: 1000;
-    display: flex; align-items: center; justify-content: center;
-    opacity: 0; visibility: hidden;
-    transition: all 0.3s ease;
-    padding: 20px;
+    background: rgba(0,0,0,0.85); backdrop-filter: blur(12px);
+    z-index: 1000; display: flex; align-items: center; justify-content: center;
+    opacity: 0; visibility: hidden; transition: all 0.3s ease; padding: 20px;
   }
   .modal-overlay.open { opacity: 1; visibility: visible; }
   .modal-box {
     background: linear-gradient(160deg, #14141f 0%, #0d0d1a 100%);
-    border: 1px solid #222244;
-    border-radius: 20px;
-    max-width: 600px;
-    width: 100%;
-    max-height: 90vh;
-    overflow-y: auto;
+    border: 1px solid #222244; border-radius: 20px;
+    max-width: 600px; width: 100%; max-height: 90vh; overflow-y: auto;
     box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 0 40px rgba(240,192,96,0.08);
-    position: relative;
-    transform: translateY(20px);
-    transition: transform 0.3s ease;
+    position: relative; transform: translateY(20px); transition: transform 0.3s ease;
   }
   .modal-overlay.open .modal-box { transform: translateY(0); }
   .modal-box.playing { border-color: rgba(0,229,255,0.3); box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 0 40px rgba(0,229,255,0.08); }
   .modal-box.backlog { border-color: rgba(179,136,255,0.3); box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 0 40px rgba(179,136,255,0.08); }
   .modal-close {
     position: absolute; top: 12px; right: 16px;
-    background: none; border: none; color: #666;
-    font-size: 1.5rem; cursor: pointer; z-index: 2;
-    transition: color 0.2s; line-height: 1;
+    background: none; border: none; color: #666; font-size: 1.5rem;
+    cursor: pointer; z-index: 2; transition: color 0.2s; line-height: 1;
   }
   .modal-close:hover { color: #ff5252; }
-  .modal-hero {
-    width: 100%; height: 215px; object-fit: cover;
-    border-radius: 20px 20px 0 0; background: #1a1a2e;
-  }
+  .modal-hero { width: 100%; height: 215px; object-fit: cover; border-radius: 20px 20px 0 0; background: #1a1a2e; }
   .modal-body { padding: 24px 28px 28px; }
   .modal-body h3 { font-size: 1.4rem; color: #fff; margin-bottom: 6px; }
   .modal-body .modal-sub { color: #666688; font-size: 0.8rem; margin-bottom: 20px; }
   .modal-stats { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 20px; }
   .modal-stat {
-    flex: 1; min-width: 100px;
-    background: rgba(255,255,255,0.03);
-    border: 1px solid #222244;
-    border-radius: 10px; padding: 14px;
-    text-align: center;
+    flex: 1; min-width: 100px; background: rgba(255,255,255,0.03);
+    border: 1px solid #222244; border-radius: 10px; padding: 14px; text-align: center;
   }
   .modal-stat .val { font-size: 1.3rem; font-weight: 700; color: #fff; margin-bottom: 2px; }
   .modal-stat .lbl { font-size: 0.7rem; color: #666688; text-transform: uppercase; letter-spacing: 0.08em; }
-  .modal-stat.completed .val { color: #f0c060; }
-  .modal-stat.playing .val { color: #00e5ff; }
-  .modal-stat.backlog .val { color: #b388ff; }
+  .modal-stat .val.completed { color: #f0c060; }
+  .modal-stat .val.playing { color: #00e5ff; }
+  .modal-stat .val.backlog { color: #b388ff; }
   .modal-btn {
     display: inline-flex; align-items: center; gap: 8px;
     background: linear-gradient(135deg, #1a4a6e, #0d3b5e);
-    border: 1px solid #1a5a8e;
-    color: #00e5ff; padding: 10px 22px; border-radius: 10px;
-    text-decoration: none; font-size: 0.9rem; font-weight: 600;
-    transition: all 0.2s; cursor: pointer; margin-top: 8px;
+    border: 1px solid #1a5a8e; color: #00e5ff;
+    padding: 10px 22px; border-radius: 10px; text-decoration: none;
+    font-size: 0.9rem; font-weight: 600; transition: all 0.2s;
   }
   .modal-btn:hover { background: #1a5a8e; box-shadow: 0 0 20px rgba(0,229,255,0.2); }
+
+  .footer {
+    text-align: center; padding: 40px 0 20px; color: #666688;
+    font-size: 0.8rem; letter-spacing: 0.05em;
+    border-top: 1px solid #222244; margin-top: 40px;
+  }
+  .footer a { color: #00e5ff; text-decoration: none; }
+  .footer a:hover { color: #fff; }
 
   @media (max-width: 768px) {
     .header h1 { font-size: 2rem; }
@@ -418,7 +222,6 @@
 </head>
 <body>
 <div class="bg-stars"></div>
-
 <div class="container">
   <header class="header">
     <div class="header-badge">Achievement Unlocked</div>
@@ -427,12 +230,12 @@
   </header>
 
   <div class="profile-card">
-    <img class="profile-avatar" src="https://avatars.steamstatic.com/6a19853c33a2302ff3c92c24a22ca9951430a075_full.jpg" alt="avatar" onerror="this.style.display='none'">
+    <img class="profile-avatar" src="https://avatars.steamstatic.com/6a19853c33a2302ff3c92c24a22ca9951430a075_full.jpg" alt="avatar">
     <div class="profile-info">
       <h3>2110260443</h3>
       <span class="steam-id">Steam ID: 76561199021736488</span>
       <div class="stats-row">
-        <div class="stat-badge"><div class="stat-num" id="stat-total">67</div><div class="stat-label">游戏总数</div></div>
+        <div class="stat-badge"><div class="stat-num">67</div><div class="stat-label">游戏总数</div></div>
         <div class="stat-badge"><div class="stat-num" id="stat-completed">0</div><div class="stat-label">已通关</div></div>
         <div class="stat-badge"><div class="stat-num" id="stat-playing">0</div><div class="stat-label">进行中</div></div>
         <div class="stat-badge"><div class="stat-num" id="stat-hours">0</div><div class="stat-label">总时长 (h)</div></div>
@@ -448,42 +251,27 @@
   </div>
 
   <div class="section section-completed" id="section-completed">
-    <div class="section-header">
-      <span class="icon">🏆</span>
-      <h2>已通关</h2>
-      <span class="count" id="count-completed"></span>
-    </div>
+    <div class="section-header"><span class="icon">🏆</span><h2>已通关</h2><span class="count" id="count-completed"></span></div>
     <div class="game-grid" id="grid-completed"></div>
   </div>
-
   <div class="section section-playing" id="section-playing">
-    <div class="section-header">
-      <span class="icon">🎮</span>
-      <h2>进行中</h2>
-      <span class="count" id="count-playing"></span>
-    </div>
+    <div class="section-header"><span class="icon">🎮</span><h2>进行中</h2><span class="count" id="count-playing"></span></div>
     <div class="game-grid" id="grid-playing"></div>
   </div>
-
   <div class="section section-backlog" id="section-backlog">
-    <div class="section-header">
-      <span class="icon">📋</span>
-      <h2>待攻略 / 浅尝</h2>
-      <span class="count" id="count-backlog"></span>
-    </div>
+    <div class="section-header"><span class="icon">📋</span><h2>待攻略 / 浅尝</h2><span class="count" id="count-backlog"></span></div>
     <div class="game-grid" id="grid-backlog"></div>
   </div>
 
-  <!-- Modal -->
   <div class="modal-overlay" id="modal" onclick="if(event.target===this)closeModal()">
     <div class="modal-box" id="modal-box">
       <button class="modal-close" onclick="closeModal()">✕</button>
-      <img class="modal-hero" id="modal-hero" src="" alt="">
+      <img class="modal-hero" id="modal-hero" src="">
       <div class="modal-body">
         <h3 id="modal-title"></h3>
         <div class="modal-sub" id="modal-sub"></div>
         <div class="modal-stats">
-          <div class="modal-stat completed"><div class="val" id="modal-playtime"></div><div class="lbl">总时长</div></div>
+          <div class="modal-stat"><div class="val" id="modal-playtime"></div><div class="lbl">总时长</div></div>
           <div class="modal-stat"><div class="val" id="modal-lastplayed"></div><div class="lbl">最后游玩</div></div>
           <div class="modal-stat"><div class="val" id="modal-category"></div><div class="lbl">状态</div></div>
         </div>
@@ -503,69 +291,176 @@ const DAY = 86400;
 
 // ═══ AUTO-UPDATE: GAMES_DATA_START ═══
 const games = [
-  // === 已通关 ===
-  {appid:1687950,name:"Persona 5 Royal",playtime:5882,lastPlayed:1714316540,category:"completed"},
-  {appid:538680,name:"英雄传说：闪之轨迹",playtime:3415,lastPlayed:1715315265,category:"completed"},
-  {appid:748490,name:"英雄传说：闪之轨迹 II",playtime:3467,lastPlayed:1716013963,category:"completed"},
-  {appid:991270,name:"英雄传说：闪之轨迹 III",playtime:2772,lastPlayed:1716814506,category:"completed"},
-  {appid:1457510,name:"英雄传说：闪之轨迹 IV",playtime:2772,lastPlayed:1720947491,category:"completed"},
-  {appid:1562940,name:"英雄传说：创之轨迹",playtime:2484,lastPlayed:1736914974,category:"completed"},
-  {appid:2113920,name:"英雄传说：黎之轨迹 II",playtime:3339,lastPlayed:1730035256,category:"completed"},
-  {appid:3447040,name:"空之轨迹 the 1st",playtime:1897,lastPlayed:1759933896,category:"completed"},
-  {appid:2161700,name:"Persona 3 Reload",playtime:3453,lastPlayed:1745578393,category:"completed"},
-  {appid:1113000,name:"Persona 4 Golden",playtime:3127,lastPlayed:1717160244,category:"completed"},
-  {appid:477740,name:"极限脱出：九人游戏",playtime:2443,lastPlayed:1753101629,category:"completed"},
-  {appid:948740,name:"AI：梦境档案",playtime:1361,lastPlayed:1738486374,category:"completed"},
-  {appid:1449200,name:"AI：梦境档案 涅槃肇始",playtime:1290,lastPlayed:1740318823,category:"completed"},
-  {appid:579180,name:"伊苏 VIII：丹娜的陨涕日",playtime:955,lastPlayed:1776435864,category:"completed"},
-  {appid:1351630,name:"伊苏 IX：怪人之夜",playtime:2044,lastPlayed:1775229063,category:"completed"},
-  {appid:1382330,name:"Persona 5 乱战：魅影攻手",playtime:1268,lastPlayed:1747835251,category:"completed"},
-  {appid:452440,name:"Flowers -Le volume sur printemps-",playtime:842,lastPlayed:1604135125,category:"completed"},
-  {appid:858940,name:"Flowers -Le volume sur ete-",playtime:1077,lastPlayed:1619706759,category:"completed"},
-  {appid:1238730,name:"Flowers -Le volume sur automne-",playtime:1069,lastPlayed:1621604853,category:"completed"},
-  {appid:1168470,name:"千面 Melancholy Love",playtime:1316,lastPlayed:1670914718,category:"completed"},
-  {appid:1233270,name:"OshiRabu: Waifus Over Husbandos",playtime:774,lastPlayed:1619081737,category:"completed"},
-  {appid:2712580,name:"南栀 Unwavering love",playtime:493,lastPlayed:1710166481,category:"completed"},
-  {appid:3350200,name:"Revenge on gold diggers",playtime:709,lastPlayed:1751623198,category:"completed"},
-  {appid:412830,name:"STEINS;GATE",playtime:146,lastPlayed:1734018811,category:"completed"},
-  {appid:311240,name:"极限脱出：零时困境",playtime:71,lastPlayed:1753339971,category:"completed"},
-  {appid:485040,name:"Nurse Love Addiction",playtime:187,lastPlayed:1639407308,category:"completed"},
-  {appid:490890,name:"Ne no Kami - The Two Princess Knights of Kyoto",playtime:255,lastPlayed:1636211077,category:"completed"},
-  {appid:1416240,name:"夜永 Eternal Love",playtime:238,lastPlayed:1623313881,category:"completed"},
-  {appid:1494190,name:"秘密舞会",playtime:100,lastPlayed:1616816710,category:"completed"},
-  {appid:948830,name:"Symbiotic Love",playtime:289,lastPlayed:1588413413,category:"completed"},
-  {appid:402620,name:"Kindred Spirits on the Roof",playtime:12,lastPlayed:1620119837,category:"completed"},
-  {appid:638230,name:"Journey",playtime:50,lastPlayed:1710167252,category:"completed"},
-  {appid:813700,name:"Sakura Sadist",playtime:8,lastPlayed:1603551160,category:"completed"},
-  {appid:475550,name:"Beholder",playtime:9,lastPlayed:1637074980,category:"completed"},
-  {appid:1044490,name:"The Expression Amrilato",playtime:4,lastPlayed:1601970818,category:"completed"},
-
-  // === 进行中 ===
-  {appid:646570,name:"Slay the Spire",playtime:8534,lastPlayed:1769587123,category:"playing"},
-  {appid:1145360,name:"Hades",playtime:282,lastPlayed:1768650161,category:"playing"},
-  {appid:322330,name:"饥荒联机版",playtime:988,lastPlayed:1743602383,category:"playing"},
-  {appid:825630,name:"STEINS;GATE 0",playtime:6,lastPlayed:1774956271,category:"playing"},
-  {appid:1602010,name:"Persona 4 Arena Ultimax",playtime:150,lastPlayed:1766503980,category:"playing"},
-  {appid:601150,name:"Devil May Cry 5",playtime:28,lastPlayed:1745073502,category:"playing"},
-  {appid:814380,name:"只狼：影逝二度",playtime:20,lastPlayed:1737442634,category:"playing"},
-  {appid:740130,name:"破晓传说",playtime:99,lastPlayed:1749743791,category:"playing"},
-  {appid:105600,name:"泰拉瑞亚",playtime:248,lastPlayed:1744271749,category:"playing"},
-  {appid:250900,name:"以撒的结合：重生",playtime:10,lastPlayed:1743663011,category:"playing"},
-  {appid:1329410,name:"雀魂麻将",playtime:418,lastPlayed:1766407334,category:"playing"},
-  {appid:1097150,name:"糖豆人：终极淘汰赛",playtime:218,lastPlayed:1657117995,category:"playing"},
-  {appid:377160,name:"辐射 4",playtime:11,lastPlayed:1616830171,category:"playing"},
-
   // === 待攻略 ===
-  {appid:292030,name:"巫师 3：狂猎",playtime:0,lastPlayed:0,category:"backlog"},
-  {appid:286690,name:"地铁 2033 Redux",playtime:0,lastPlayed:0,category:"backlog"},
-  {appid:413420,name:"超级弹丸论破 2",playtime:0,lastPlayed:0,category:"backlog"},
-  {appid:555950,name:"绝对绝望少女",playtime:0,lastPlayed:0,category:"backlog"},
-  {appid:775500,name:"绯红结系",playtime:0,lastPlayed:0,category:"backlog"},
-  {appid:451760,name:"Highway Blossoms",playtime:0,lastPlayed:0,category:"backlog"},
-  {appid:701420,name:"Ne no Kami Part 2",playtime:0,lastPlayed:0,category:"backlog"},
-  {appid:1921560,name:"Flowers -Le volume sur hiver-",playtime:0,lastPlayed:0,category:"backlog"},
-  {appid:1315160,name:"鸢之歌",playtime:0,lastPlayed:0,category:"backlog"},
-  {appid:227300,name:"欧洲卡车模拟 2",playtime:0,lastPlayed:0,category:"backlog"},
-  {appid:270880,name:"美国卡车模拟",playtime:0,lastPlayed:0,category:"backlog"},
-  {appid:346110,name:"方舟：生存进化",playtime:0,lastPlayed:0,category:"backlog"},
-  {appid:407530,name:"方舟：适者生存",playtime:0,lastPla
+  {appid:105600,name:"Terraria",playtime:248,lastPlayed:1744271749,category:"backlog"}
+  {appid:227300,name:"Euro Truck Simulator 2",playtime:0,lastPlayed:0,category:"backlog"}
+  {appid:250900,name:"The Binding of Isaac: Rebirth",playtime:10,lastPlayed:1743663011,category:"backlog"}
+  {appid:270880,name:"American Truck Simulator",playtime:0,lastPlayed:0,category:"backlog"}
+  {appid:286690,name:"Metro 2033 Redux",playtime:0,lastPlayed:0,category:"backlog"}
+  {appid:292030,name:"The Witcher 3: Wild Hunt",playtime:0,lastPlayed:0,category:"backlog"}
+  {appid:311240,name:"Zero Escape: Zero Time Dilemma",playtime:71,lastPlayed:1753339971,category:"backlog"}
+  {appid:322330,name:"Don't Starve Together",playtime:988,lastPlayed:1743602383,category:"backlog"}
+  {appid:346110,name:"ARK: Survival Evolved",playtime:0,lastPlayed:0,category:"backlog"}
+  {appid:377160,name:"Fallout 4",playtime:11,lastPlayed:1616830171,category:"backlog"}
+  {appid:397270,name:"A Kiss For The Petals - Remembering How We Met",playtime:0,lastPlayed:0,category:"backlog"}
+  {appid:402620,name:"Kindred Spirits on the Roof",playtime:12,lastPlayed:1620119837,category:"backlog"}
+  {appid:407530,name:"ARK: Survival Of The Fittest",playtime:0,lastPlayed:0,category:"backlog"}
+  {appid:412830,name:"STEINS;GATE",playtime:146,lastPlayed:1734018811,category:"backlog"}
+  {appid:413420,name:"Danganronpa 2: Goodbye Despair",playtime:0,lastPlayed:0,category:"backlog"}
+  {appid:431960,name:"Wallpaper Engine",playtime:1722,lastPlayed:1762182819,category:"backlog"}
+  {appid:451760,name:"Highway Blossoms",playtime:0,lastPlayed:0,category:"backlog"}
+  {appid:452440,name:"Flowers -Le volume sur printemps-",playtime:842,lastPlayed:1604135125,category:"backlog"}
+  {appid:475550,name:"Beholder",playtime:9,lastPlayed:1637074980,category:"backlog"}
+  {appid:477740,name:"Zero Escape: The Nonary Games",playtime:2443,lastPlayed:1753101629,category:"backlog"}
+  {appid:485040,name:"Nurse Love Addiction",playtime:187,lastPlayed:1639407308,category:"backlog"}
+  {appid:490890,name:"Ne no Kami - The Two Princess Knights of Kyoto",playtime:255,lastPlayed:1636211077,category:"backlog"}
+  {appid:538680,name:"The Legend of Heroes: Trails of Cold Steel",playtime:3415,lastPlayed:1715315265,category:"backlog"}
+  {appid:555950,name:"Danganronpa Another Episode: Ultra Despair Girls",playtime:0,lastPlayed:0,category:"backlog"}
+  {appid:579180,name:"Ys VIII: Lacrimosa of Dana",playtime:955,lastPlayed:1776435864,category:"backlog"}
+  {appid:601150,name:"Devil May Cry 5",playtime:28,lastPlayed:1745073502,category:"backlog"}
+  {appid:638230,name:"Journey",playtime:50,lastPlayed:1710167252,category:"backlog"}
+  {appid:646570,name:"Slay the Spire",playtime:8534,lastPlayed:1769587123,category:"backlog"}
+  {appid:646910,name:"The Crew 2",playtime:21,lastPlayed:1742821755,category:"backlog"}
+  {appid:701420,name:"Ne no Kami - The Two Princess Knights of Kyoto Part 2",playtime:0,lastPlayed:0,category:"backlog"}
+  {appid:740130,name:"Tales of ARISE",playtime:99,lastPlayed:1749743791,category:"backlog"}
+  {appid:748490,name:"The Legend of Heroes: Trails of Cold Steel II",playtime:3467,lastPlayed:1716013963,category:"backlog"}
+  {appid:775500,name:"SCARLET NEXUS",playtime:0,lastPlayed:0,category:"backlog"}
+  {appid:813700,name:"Sakura Sadist",playtime:8,lastPlayed:1603551160,category:"backlog"}
+  {appid:814380,name:"Sekiro™: Shadows Die Twice",playtime:20,lastPlayed:1737442634,category:"backlog"}
+  {appid:825630,name:"STEINS;GATE 0",playtime:6,lastPlayed:1774956271,category:"backlog"}
+  {appid:858940,name:"Flowers -Le volume sur ete-",playtime:1077,lastPlayed:1619706759,category:"backlog"}
+  {appid:948740,name:"AI: The Somnium Files",playtime:1361,lastPlayed:1738486374,category:"backlog"}
+  {appid:948830,name:"Symbiotic Love",playtime:289,lastPlayed:1588413413,category:"backlog"}
+  {appid:976310,name:"Mortal Kombat 11",playtime:0,lastPlayed:0,category:"backlog"}
+  {appid:991270,name:"The Legend of Heroes: Trails of Cold Steel III",playtime:2772,lastPlayed:1716814506,category:"backlog"}
+  {appid:993090,name:"Lossless Scaling",playtime:311,lastPlayed:1773555517,category:"backlog"}
+  {appid:1044490,name:"The Expression Amrilato",playtime:4,lastPlayed:1601970818,category:"backlog"}
+  {appid:1097150,name:"Fall Guys",playtime:218,lastPlayed:1657117995,category:"backlog"}
+  {appid:1113000,name:"Persona 4 Golden",playtime:3127,lastPlayed:1717160244,category:"backlog"}
+  {appid:1145360,name:"Hades",playtime:282,lastPlayed:1768650161,category:"backlog"}
+  {appid:1168470,name:"千面 Melancholy Love",playtime:1316,lastPlayed:1670914718,category:"backlog"}
+  {appid:1233270,name:"OshiRabu: Waifus Over Husbandos",playtime:774,lastPlayed:1619081737,category:"backlog"}
+  {appid:1238730,name:"Flowers -Le volume sur automne-",playtime:1069,lastPlayed:1621604853,category:"backlog"}
+  {appid:1315160,name:"Singing Iris 鸢之歌",playtime:0,lastPlayed:0,category:"backlog"}
+  {appid:1329410,name:"雀魂麻将(MahjongSoul)",playtime:418,lastPlayed:1766407334,category:"backlog"}
+  {appid:1351630,name:"Ys IX: Monstrum Nox",playtime:2044,lastPlayed:1775229063,category:"backlog"}
+  {appid:1382330,name:"Persona 5 Strikers",playtime:1268,lastPlayed:1747835251,category:"backlog"}
+  {appid:1416240,name:"夜永 Eternal Love",playtime:238,lastPlayed:1623313881,category:"backlog"}
+  {appid:1426210,name:"It Takes Two",playtime:0,lastPlayed:0,category:"backlog"}
+  {appid:1449200,name:"AI: THE SOMNIUM FILES - nirvanA Initiative",playtime:1290,lastPlayed:1740318823,category:"backlog"}
+  {appid:1457510,name:"The Legend of Heroes: Sen no Kiseki IV -THE END OF SAGA-",playtime:2772,lastPlayed:1720947491,category:"backlog"}
+  {appid:1494190,name:"秘密舞会",playtime:100,lastPlayed:1616816710,category:"backlog"}
+  {appid:1562940,name:"THE LEGEND OF HEROES: HAJIMARI NO KISEKI",playtime:2484,lastPlayed:1736914974,category:"backlog"}
+  {appid:1602010,name:"Persona 4 Arena Ultimax",playtime:150,lastPlayed:1766503980,category:"backlog"}
+  {appid:1687950,name:"Persona 5 Royal",playtime:5882,lastPlayed:1714316540,category:"backlog"}
+  {appid:1921560,name:"Flowers -Le volume sur hiver-",playtime:0,lastPlayed:0,category:"backlog"}
+  {appid:2113920,name:"The Legend of Heroes: Kuro no Kiseki Ⅱ -CRIMSON SiN-	",playtime:3339,lastPlayed:1730035256,category:"backlog"}
+  {appid:2161700,name:"Persona 3 Reload",playtime:3453,lastPlayed:1745578393,category:"backlog"}
+  {appid:2712580,name:"南栀 Unwavering love",playtime:493,lastPlayed:1710166481,category:"backlog"}
+  {appid:3350200,name:"Revenge on gold diggers ",playtime:709,lastPlayed:1751623198,category:"backlog"}
+  {appid:3447040,name:"Sora no Kiseki the 1st",playtime:1897,lastPlayed:1759933896,category:"backlog"}
+];
+// ═══ AUTO-UPDATE: GAMES_DATA_END ═══
+
+function formatPlaytime(minutes) {
+  if (minutes < 60) return minutes + ' 分钟';
+  const h = Math.floor(minutes / 60);
+  if (h < 10) return h + '.' + Math.round((minutes % 60) / 6) + ' 小时';
+  return h + ' 小时';
+}
+
+function getBadge(cat) {
+  if (cat === 'completed') return '<span class="badge badge-completed">已通关</span>';
+  if (cat === 'playing') return '<span class="badge badge-playing">进行中</span>';
+  return '<span class="badge badge-backlog">待攻略</span>';
+}
+
+function getCardClass(cat) {
+  if (cat === 'completed') return 'card-completed';
+  if (cat === 'playing') return 'card-playing';
+  return 'card-backlog';
+}
+
+function createCard(g) {
+  const imgUrl = `https://cdn.cloudflare.steamstatic.com/steam/apps/${g.appid}/capsule_231x87.jpg`;
+  return `<div class="game-card ${getCardClass(g.category)}" data-category="${g.category}" data-id="${g.appid}" onclick="openModal(${g.appid})">
+    <img class="card-img" src="${imgUrl}" alt="${g.name}" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <div class="card-img-placeholder" style="display:none">🎮</div>
+    <div class="card-body">
+      <div class="card-title" title="${g.name}">${g.name}</div>
+      <div class="card-meta">
+        <span class="playtime">${formatPlaytime(g.playtime)}</span>
+        ${getBadge(g.category)}
+      </div>
+    </div>
+  </div>`;
+}
+
+const gameMap = {};
+games.forEach(g => gameMap[g.appid] = g);
+
+function timeAgo(ts) {
+  if (!ts) return '从未';
+  const diff = Math.floor((NOW - ts) / DAY);
+  if (diff < 1) return '今天';
+  if (diff < 7) return diff + ' 天前';
+  if (diff < 30) return Math.floor(diff / 7) + ' 周前';
+  if (diff < 365) return Math.floor(diff / 30) + ' 个月前';
+  return Math.floor(diff / 365) + ' 年前';
+}
+
+function openModal(appid) {
+  const g = gameMap[appid];
+  if (!g) return;
+  const overlay = document.getElementById('modal');
+  const box = document.getElementById('modal-box');
+  document.getElementById('modal-hero').src = `https://cdn.cloudflare.steamstatic.com/steam/apps/${appid}/library_hero.jpg`;
+  document.getElementById('modal-hero').onerror = function() { this.src = `https://cdn.cloudflare.steamstatic.com/steam/apps/${appid}/header.jpg`; };
+  document.getElementById('modal-title').textContent = g.name;
+  document.getElementById('modal-sub').textContent = 'App ID: ' + appid;
+  document.getElementById('modal-playtime').textContent = formatPlaytime(g.playtime);
+  document.getElementById('modal-playtime').className = 'val ' + g.category;
+  document.getElementById('modal-lastplayed').textContent = timeAgo(g.lastPlayed);
+  document.getElementById('modal-steam-link').href = 'https://store.steampowered.com/app/' + appid;
+  const catNames = {completed:'已通关', playing:'进行中', backlog:'待攻略'};
+  document.getElementById('modal-category').textContent = catNames[g.category] || g.category;
+  document.getElementById('modal-category').className = 'val ' + g.category;
+  box.className = 'modal-box ' + g.category;
+  overlay.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  document.getElementById('modal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function renderAll() {
+  const cats = {completed: [], playing: [], backlog: []};
+  games.forEach(g => cats[g.category].push(g));
+  document.getElementById('grid-completed').innerHTML = cats.completed.map(createCard).join('');
+  document.getElementById('grid-playing').innerHTML = cats.playing.map(createCard).join('');
+  document.getElementById('grid-backlog').innerHTML = cats.backlog.map(createCard).join('');
+  document.getElementById('count-completed').textContent = cats.completed.length + ' 款';
+  document.getElementById('count-playing').textContent = cats.playing.length + ' 款';
+  document.getElementById('count-backlog').textContent = cats.backlog.length + ' 款';
+  document.getElementById('stat-completed').textContent = cats.completed.length;
+  document.getElementById('stat-playing').textContent = cats.playing.length;
+  document.getElementById('stat-hours').textContent = Math.round(games.reduce((s,g) => s + g.playtime, 0) / 60);
+}
+
+function filterGames(cat, btn) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.section').forEach(s => s.style.display = 'block');
+  document.querySelectorAll('.game-card').forEach(c => { c.style.display = cat === 'all' ? '' : (c.dataset.category === cat ? '' : 'none'); });
+  if (cat === 'completed') document.getElementById('section-completed').scrollIntoView({behavior:'smooth'});
+  if (cat === 'playing') document.getElementById('section-playing').scrollIntoView({behavior:'smooth'});
+  if (cat === 'backlog') document.getElementById('section-backlog').scrollIntoView({behavior:'smooth'});
+}
+
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+renderAll();
+</script>
+</body>
+</html>
